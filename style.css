@@ -19,8 +19,8 @@ h2 {
     font-family: "Open Sans", sans-serif;
 }
 h3 {
-    text-align: center;
     font-family: "Open Sans", sans-serif;
+    margin-top: 0;
 }
 h4 {
     text-align: center;
@@ -34,6 +34,12 @@ h6 {
     text-align: center;
     font-family: "Open Sans", sans-serif;
 }
+.quantity {
+    margin-left: 16px;
+}
+.glazing {
+    margin-left: 16px;
+}
 /*Specific styling for orange text p*/
 #orange {
     color: #EC910E;
@@ -43,8 +49,11 @@ h6 {
 nav.primary {
     background-color: #ffffff;
     border-style: solid;
-    padding: 16px;
+    padding: 16px 320px;
     margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 nav.primary ul {
     display: flex;
@@ -125,7 +134,8 @@ a {
 }
 .pbp {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 32px;
 }
 .pbp2 {
     display: flex;
@@ -176,7 +186,7 @@ h2.origbun:after {
 }
 .add {
     margin: 20px;
-    padding: 16px 56px;
+    padding: 16px 90px;
     font-size: 16px;
     background-color: #4A90E2;
     color: white;
@@ -190,12 +200,14 @@ h2.origbun:after {
     color: white;
 }
 .add3 {
-    float: right;
     margin: 20px;
-    padding: 16px 56px;
+    padding: 0px 56px;
     font-size: 16px;
     background-color: #000000;
     color: white;
+    height: 48px;
+    align-self: flex-end;
+    margin-bottom: 0;
 }
 .add4 {
     text-align: center;
@@ -257,6 +269,7 @@ ul.shopbar {
     padding: 20px;
     border-style: solid;
     border-color: #D8D8D8;
+    justify-content: space-between;
 }
 .shopInfo {
     padding: 10px;
@@ -301,13 +314,26 @@ ul.shopInfo  {
     border-style: solid;
     
 }
+
 ul.numberOrder {
     display: block;
     list-style-type: none;
+    padding: 0;
     
 }
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+.buttonGroup .add {
+    align-self: flex-end;
+}
+.buttonGroup a {
+    align-self: flex-end;
+}
 ul.numberOrder li{
-    width: 49%;
+    width: 40%;
     display: inline-block;
     padding: 16px 0;
 }
@@ -316,6 +342,7 @@ ul.numberOrder li{
 }
 .options h2 {
     text-align: left;
+    font-weight: 600;
 }
 .options {
     display: flex;
@@ -369,4 +396,7 @@ ul.numberOrder li{
     height: 200px;
     background-size: cover;
     background-position: center;
+}
+.shoppingCart h6{
+    margin: 0;
 }
