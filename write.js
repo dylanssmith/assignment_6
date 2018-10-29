@@ -72,6 +72,7 @@ $(document).ready(function(){
         for (i in dataArray) {
             if (button within .wrapper is clicked) {
                 $(".wrapper").remove();
+                localStorage.removeItem(i);
             }
         }
     }
