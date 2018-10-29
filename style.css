@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    margin: 0;
+}
+/*Styles for text, h1 through h6, including p*/
+h1 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+#p {
+    max-width: 600px;
+}
+h2 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+h3 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+h4 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+h5 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+h6 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+/*Specific styling for orange text p*/
+#orange {
+    color: #EC910E;
+    text-align: center;
+}
+/*Navigation bar styling*/
+nav.primary {
+    background-color: #ffffff;
+    border-style: solid;
+    padding: 16px;
+    margin: 20px 0px 20px 0px;
+}
+nav.primary ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 500px   
+}
+/*Secondary navigation bar styling on About Page*/
+nav.secondary {
+    padding: 30px 30px 0px 30px;
+}
+nav.secondary ul {
+    display: flex;
+    max-width: 600px;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
+    color: #9B9B9B;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Circles*/
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color:#D8D8D8;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+}
+#blackdot {
+    height: 5px;
+    width: 5px;
+    background-color: #000000;
+    margin: 45px 8px 8px 5px;
+}
+/*Images*/
+#bw {
+/*    margin: auto;*/
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+#cinnswirl img {
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    max-width: 40px;
+    
+}
+#cart img {
+    float: right;
+    width: 30px;
+}
+.sb33 {
+    width: 33%;
+    display: inline-block;
+}
+.bun {
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.star {
+    padding: 10px;
+    float: right;
+}
+.pbp {
+    display: flex;
+    justify-content: center;
+}
+.pbp2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 240px 10px 10px;
+    
+}
+.sg {
+    padding: 50px 10px 10px 50px;
+}
+#cost {
+    color: #417505;
+}
+.line {
+    padding: 33px 10px 10px 10px;
+}
+.line2 {
+    padding: 0px 0px 10px 125px;
+    margin: 0px 10px 10px 10px;
+}
+.brothers {
+    padding: 50px 10px 0px 10px;
+    justify-content: center;
+}
+.padding0 {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.origbun {
+    padding: 0px;
+    margin: 0px;
+}
+h2.origbun:after {
+    border-bottom-color: #000000;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    color: #000000;
+}
+.black {
+    color: black;
+}
+
+.pd {
+    padding: 10px;
+}
+.pdbox {
+    padding: 25px 10px 10px 10px;
+}
+.add {
+    margin: 20px;
+    padding: 16px 56px;
+    font-size: 16px;
+    background-color: #4A90E2;
+    color: white;
+}
+.add2 {
+    float: right;
+    margin: 20px;
+    padding: 16px 56px;
+    font-size: 16px;
+    background-color: #4A90E2;
+    color: white;
+}
+.add3 {
+    float: right;
+    margin: 20px;
+    padding: 16px 56px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+}
+.add4 {
+    text-align: center;
+    margin: 20px;
+    padding: 16px 56px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+.shop {
+    display: flex;
+    padding: 20px;
+}
+.items {
+    margin: 20px 20px;
+    padding: 0px 16px;
+    border-style: solid;
+    border-color:#D8D8D8;
+    border-radius: 10px;
+    height: 42px;
+}
+.shop {
+    padding: 10px;
+    border-style: solid;
+    border-color:#D8D8D8;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul.shopbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+/*    margin: 0 auto;*/
+    width: 500px;
+}
+.left {
+    padding: 14px;
+}
+.two {
+    margin: 10px;
+}
+.its {
+    padding: 12px 0px 0px;
+}
+#Product {
+    
+}
+.shopImage {
+    width: 200px;
+}
+.shop3 {
+    margin: 20px;
+    display: flex;
+    padding: 20px;
+    border-style: solid;
+    border-color: #D8D8D8;
+}
+.shopInfo {
+    padding: 10px;
+    border-color:#D8D8D8;
+    border-left: none;
+    border-right: none;
+}
+ul.shopInfo  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+}
+.checkButton {
+    padding: 20px;
+    margin: 20px;
+    background-color: #4A90E2;
+    width: 200px;
+    height: 50px;
+    float: right;
+    border-radius: 10px;
+}
+.checkButton h2 {
+    color: #ffffff;
+}
+.subtotal h2 {
+    padding: 20px;
+    text-align: right;
+}
+.back {
+    margin: 20px;
+    background-color: #4A90E2;
+    border-radius: 10px;
+}
+.back h4 {
+    text-align: left;
+    color: #ffffff;
+}
+.remove h4 {
+    padding: 10px;
+    border-style: solid;
+    
+}
+ul.numberOrder {
+    display: block;
+    list-style-type: none;
+    
+}
+ul.numberOrder li{
+    width: 49%;
+    display: inline-block;
+    padding: 16px 0;
+}
+.glaze h2{
+    text-align: left;
+}
+.options h2 {
+    text-align: left;
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.wrapper {
+    max-width: 100%;
+}
+.productItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.title2 {
+    display: flex;
+    justify-content: center;
+}
+.buns {
+    display: flex;
+    padding: 5px 5px 40px 5px;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.ourBuns {
+    margin: 20px;
+}
+#none {
+    background-image: url("images/noGlaze.png")
+}
+#sugar-milk {
+    background-image: url("images/sugarMilk.png")
+    
+}
+#vanilla-milk {
+    background-image: url("images/vanillaMilk.png")
+}
+#double-chocolate {
+    background-image: url("images/doubleChoc.png")
+    
+}
+.cartTitle {
+    text-align: left;
+    padding: 20px;
+}

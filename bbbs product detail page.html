@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bun Bun Bake Shop</title>
+        <link rel="stylesheet" type ="text/css" href="style.css">
+<!--linke to jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--linke to javascript-->
+        <script src="write.js" type="text/javascript"></script>
+<!--this is my favicon-->
+        <link rel="shortcut icon" href="images/Cinnamon%20swirl.png">
+    </head>
+    <body>
+<!--Bun Bun logos and copy-->
+    <header>
+        <div class="title2">
+            <div id="cinnswirl">
+                <img src= "images/Cinnamon Swirl.png"/>
+            </div>
+                <h1> Bun Bun Bake Shop</h1>
+        </div>
+        <h5 id="orange">
+            Pittsburgh Local. Artisanal & Famous
+        </h5>
+<!--this is my navigation bar-->
+        <nav class="primary">
+            <ul>
+                <li>
+                    <a href="bbbs home page.html">Home</a>
+                </li>
+                <span class="dot">
+                </span>
+                <li>
+                    <a href="bbbs product browsing page.html">Our Buns</a>
+                </li>
+                <span class="dot">
+                </span>
+                <li>
+                    <a href="bbbs about page.html">About</a>
+                </li>
+                <span class="dot">
+                </span>
+                <div id="cart">
+                    <a href="bbbs%20shopping%20cart%20page.html">
+                        <div class="shoppingCart">
+                            <img src= "images/regular%20cart.png"/>
+                            <h6 id="cartNum"></h6>
+                        </div>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>     
+<!--Page Title - Menu -->
+        <h2 class="typeBun">Original Bun</h2>
+<!--My product detail for the old fashioned bun, used flex-box for this-->
+        <div class="pbp">
+            <div class="bun" id="none">
+
+            </div>
+            <div class="options">
+<!--where the text for the product detail starts-->
+                <div class="quantity">
+                    <h3>Choose Quantity</h3>
+                    <ul class="numberOrder">
+                        <li>
+                            <input checked="checked" id="quantity1" type="radio" name="quantity" value="1"> <label for="quantity1">One</label>
+                        </li>
+                        <li>
+                           <input id="quantity3" type="radio" name="quantity" value="3"> <label for="quantity3">Three</label>  
+                        </li>
+                        <li>
+                            <input id="quantity6" type="radio" name="quantity" value="6"> <label for="quantity6">Six</label>
+                        </li>
+                        <li>
+                            <input id="quantity12" type="radio" name="quantity" value="12"> <label for="quantity12">Twelve</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glazing">
+                    <h3>Choose Glaze</h3>
+                    <ul class="numberOrder">
+                        <li>
+                            <input checked="checked" id="ctOne" type="radio" name="glazing" value="none"> <label for="ctOne">None</label>
+                        </li>
+                        <li>
+                            <input id="ctThree" type="radio" name="glazing" value="sugar-milk"> <label for="ctThree">Sugar-Milk</label>
+                        </li>
+                        <li>
+                            <input id="ctSix" type="radio" name="glazing" value="vanilla-milk"> <label for="ctSix">Vanilla-Milk</label>
+                        </li>
+                        <li>
+                            <input id="ctTwelve" type="radio" name="glazing" value="double-chocolate"> <label for="ctTwelve">Double Chocolate</label>
+                        </li>
+                    </ul>
+                </div>  
+                <button class="add" type="button" id="addcartbtn" class="addToCart">Add To Cart</button>   
+            </div>
+        </div>
+        <a href="bbbs%20shopping%20cart%20page.html">
+            <button class="add4" type="button" id="toCart" class="toCart">Go To Shopping Cart</button> 
+        </a>
+        
+    </body>
