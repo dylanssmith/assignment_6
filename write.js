@@ -60,23 +60,27 @@ $(document).ready(function(){
     
     //adds selected items to shopping cart page
     function addToShoppingCart() {
-        for (i in dataArray) {
-            $(".wrapper").append('<div class="shop3"></div>');
-            $(".shop3").html(quantity, glaze, type, image);          
+        for (i=0; i < dataArray.length; i++) {
+            $(".wrapper").append('<div class="shop3" id='+i+'><div class="itemPic" id=' + dataArray[i].glaze + '></div><button class="add3" type="button" id="removecartbtn" data-id='+i+'></button></div>');     
         }
+        
     }
     addToShoppingCart();
     
+    //select button
+    //listen for click
+    //call removeFromShoppingCart
+    $(".add3").click(removeFromShoppingCart);
+    
     //removes selected items from shopping cart page
-    function removeFromShoppingCart() {
-        for (i in dataArray) {
-            if (button within .wrapper is clicked) {
-                $(".wrapper").remove();
-                localStorage.removeItem(i);
-            }
-        }
+    function removeFromShoppingCart() {        
+        var index = $(this).data("id");
+        console.log(index) 
+        $("#"+index).remove();
+        console.log(dataArray);
+        dataArray.splice(index, 1);
+        localStorage.setItem("dataArray", JSON.stringify(dataArray));  
     }
-    removeFromShoppingCart();
 });
 
 
